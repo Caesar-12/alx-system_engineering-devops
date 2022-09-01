@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x /tmp/h$/
+chmod 755 /tmp/h$/
