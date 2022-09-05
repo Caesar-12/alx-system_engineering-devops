@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -printf "%t - %p\n" | ls -r | tail -12
+find . -type f -printf "%t - %p\n" | tail -12
