@@ -1,0 +1,1 @@
+Learning and walking through shell variablea and expansions
