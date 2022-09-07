@@ -1,0 +1,2 @@
+#!/bin/bash
+tr {f..z} {F..Z} | tr {F..Z} {f..z}
