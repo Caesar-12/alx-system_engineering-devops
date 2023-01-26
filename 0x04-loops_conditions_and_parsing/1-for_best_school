@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Displays "Best School" 10 times with a for loop
 
 n=10
 for (( i=1 ; i<=n ; i++ ));

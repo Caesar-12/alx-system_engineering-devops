@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Display 12 hour
 n=0
 while [ $n -le 12 ]
 do
