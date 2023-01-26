@@ -1,0 +1,12 @@
+#!/bin/bash
+
+n=10
+
+while [ $n -gt 0 ]
+do
+	echo "Best School"
+	if [ $n -eq 2 ]; then
+		echo "Hi"
+	fi
+	((n--))
+done

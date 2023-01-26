@@ -1,0 +1,26 @@
+#!/bin/bash
+
+n=1
+while [ $n -le 20 ]
+do
+case $n in
+	4)
+		echo $n
+		echo "bad luck from china"
+		;;
+
+	9)
+		echo $n
+		echo "bad luck from china"
+		;;
+	17)
+		echo $n
+		echo "bad luck from italy"
+		;;
+	*)
+		echo $n
+		;;
+esac
+((n++))
+done
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+n=0
+while [ $n -le 12 ]
+do
+	min=1
+	echo "Hour: $n"
+	while [ $min -le 59 ]
+	do
+		echo "$min"
+		((min++))
+	done
+	((n++))
+done
