@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#prints file in a directory
+
+for FILE in *
+do
+	echo $FILE | cut -d "-" -f2
+done
