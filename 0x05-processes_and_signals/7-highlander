@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Displays "To infinity and beyond" indefinitely
+
+msg()
+{
+	echo "I am invincible!!!"
+}
+trap "msg" SIGTERM
+
+n=5
+while [ $n -eq 5 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Displays processes from bash
 
-ps | grep bash
+pgrep -l bash
 
