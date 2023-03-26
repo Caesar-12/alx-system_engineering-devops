@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # Creates a RSA key of 4096 bits
+# 4096 bits
+# dir -> ./school
 
 ssh-keygen -b 4096 -N betty -f ./school
