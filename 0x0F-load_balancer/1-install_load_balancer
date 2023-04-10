@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Installs and configures HAproxy on a server
+
+# Installation
+sudo apt-get -y update
+sudo apt-get install haproxy -y
+
+# Configuration
+# Change ownership from root
+user=$(whoami)
+sudo chown $user:$user /etc/haproxy/haproxy.cfg
+
+# Edit config file
+sudo echo '
+frontend caesarpage.tech
+    bind *:80
+    default_backend myweb_servers
+
+backend myweb_servers
+    balance roundrobin
+    server 145717-web-01 107.23.106.9:80 check
+    server 145717-web-02 100.25.33.244:80 check
+' >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart
