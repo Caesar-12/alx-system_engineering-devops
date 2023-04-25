@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Script to export data in the CSV format
 """
