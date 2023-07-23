@@ -31,7 +31,7 @@ def api_data():
 
     print("Employee {} is done with tasks({}/{}):".format(name,task_comp, tots_task))
     for task in tasks:
-        print("     {}".format(task))
+        print("\t {}".format(task))
 
     #print(data.json())
 
